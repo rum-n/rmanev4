@@ -5,9 +5,9 @@ $(document).ready(function(){$("body").hide().fadeIn(2000);});
 // PAGE GREETING
 
 var textWrapper = document.querySelector('.ml11 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^ \x80-\xFF]|\w)/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: false})
+anime.timeline({loop: true})
   .add({
     targets: '.ml11 .line',
     scaleY: [0,1],
@@ -35,3 +35,22 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+  // CIRCLE TEXT
+
+var circleText = document.getElementById("circle-text");
+    
+window.addEventListener("scroll", function() {
+    circleText.style.transform = "rotate("+ (window.pageYOffset/7) + "deg)";    
+});
+
+  // CAROUSEL
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    duration: 400,
+    indicators: true
+  });
+
+  
+      
