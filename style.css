@@ -102,7 +102,7 @@
     animation-delay: -1s;
   }
 }
-@keyframes move-forever1 {
+/* @keyframes move-forever1 {
   0% {
     transform: translate(85px, 0%);
   }
@@ -125,7 +125,7 @@
   100% {
     transform: translate(-90px, 0%);
   }
-}
+} */
 @keyframes move-forever4 {
   0% {
     transform: translate(-90px, 0%);
@@ -223,43 +223,6 @@
 
 /* CONTACT */
 
-.section-4 {
-  background-color:#4CA39E;
-  margin-top: 150px;
-  right: 0;
-  width: 90%;
-  height: 60%;
-}
-
-.section-4 h2 {
-  color: #2c3979;
-  padding: 50px 0 50px 50px;
-  right: 0;
-}
-
-.input-field label {
-  color: #000;
-}
-/* label focus color */
-.input-field input[type=text]:focus + label {
-  color: #000;
-}
-/* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
-}
-/* valid color */
-.input-field input[type=text].valid {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
-  color: #000;
+.projects h2 {
+  color:#4CA39E;
 }
